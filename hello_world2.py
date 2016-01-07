@@ -8,4 +8,6 @@ saying = "Hello World"
 
 name = input("What's your name: ")
 
-print(saying, name)
+output = saying + " " + name
+
+print(output)

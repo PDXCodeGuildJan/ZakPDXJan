@@ -20,9 +20,6 @@ part_of_body2 = input("Please name another part of your body that exercise benef
 
 mad_lib += part_of_body2 + " That's my mad_lib "
 
-
-
-
 print(mad_lib)
 
 
