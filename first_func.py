@@ -1,14 +1,23 @@
 from random import randint
 
+# rolls d6 
 def die():
-	die_roll = randint(1,6)
-	print(die_roll)
-	
+	print(randint(1,6))
+
+# rolls custom die 
 def custom_die(low, high):
-	die_roll = randint(low, high)
 	print("Your range was {}, {}".format(str(low), str(high)))
-	print(die_roll)
+	print(randint(low, high))
+
+def main():
+	# Ask user how many dice to rool 
+	total_rolls = int(input("How many dice? "))
+	total_sides = int(input("How many sides does the die have? "))
+
+	# Roll that many die 
+	for item in range(total_rolls):
+		custom_die(1, total_sides)
+
+main()
 
 
-custom_die(1,10)
-custom_die(10,100)
